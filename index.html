@@ -1,150 +1,150 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <!DOCTYPE HTML> -->
+<!-- <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+  Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page
+  Global site tag (gtag.js) - Google Analytics
 
-  <title>Improving the Loss Function Efficiency for Speaker Extraction Using Psychoacoustic Effects</title>
+  <!-- <title>Improving the Loss Function Efficiency for Speaker Extraction Using Psychoacoustic Effects</title> -->
   
-  <meta name="author" content="Haleh Damirchi">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="author" content="Haleh Damirchi"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
-</head>
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+<!-- </head> -->
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Improving the Loss Function Efficiency for Speaker Extraction Using Psychoacoustic Effects</name>
-            </td>
-			<!-- <td style="padding:2.5%;width:40%;max-width:40%"> -->
-              <!-- <a href="images/me.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/me.jpg" class="hoverZoomLink"></a> -->
+<!-- <body> -->
+  <!-- <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+    <!-- <tr style="padding:0px"> -->
+      <!-- <td style="padding:0px"> -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+          <!-- <tr style="padding:0px"> -->
+            <!-- <td style="padding:2.5%;width:63%;vertical-align:middle"> -->
+              <!-- <p style="text-align:center"> -->
+                <!-- <name>Improving the Loss Function Efficiency for Speaker Extraction Using Psychoacoustic Effects</name> -->
             <!-- </td> -->
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Abstract</heading>
-              <p>
-                Speaker extraction aims to extract the speech signal of the speaker of interest from a mixture of two or more speakers. We propose a set of novel psychoacoustic-based loss functions that each can be used to optimize a stacked network of Bidirectional Long Short Term Memories (BLSTM) to imitate the human hearing system, which has an extraordinary ability to perceive and separate speech signals. To do this, we propose to use Mel and Gammatone filter banks as well as perceptual loudness and power-law of hearing effects in the loss functions of BLSTMs. The evaluation results on the Speech Separation Corpus (SSC) show that the proposed approach outperforms the baseline methods in terms of Short-Time Objective Intelligibility (STOI), Perceptual Evaluation of Speech Quality (PESQ) and  Speech to Distortion Ratio (SDR). The proposed approach leads to an improvement of up to 0.277 in PESQ results compared to baseline methods.
-              </p>
+			<td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/me.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/me.jpg" class="hoverZoomLink"></a>
             </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- </tr> -->
+        <!-- </tbody></table> -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+            <!-- <tr> -->
+            <!-- <td style="padding:20px;width:100%;vertical-align:middle"> -->
+              <!-- <heading>Abstract</heading> -->
+              <!-- <p> -->
+                <!-- Speaker extraction aims to extract the speech signal of the speaker of interest from a mixture of two or more speakers. We propose a set of novel psychoacoustic-based loss functions that each can be used to optimize a stacked network of Bidirectional Long Short Term Memories (BLSTM) to imitate the human hearing system, which has an extraordinary ability to perceive and separate speech signals. To do this, we propose to use Mel and Gammatone filter banks as well as perceptual loudness and power-law of hearing effects in the loss functions of BLSTMs. The evaluation results on the Speech Separation Corpus (SSC) show that the proposed approach outperforms the baseline methods in terms of Short-Time Objective Intelligibility (STOI), Perceptual Evaluation of Speech Quality (PESQ) and  Speech to Distortion Ratio (SDR). The proposed approach leads to an improvement of up to 0.277 in PESQ results compared to baseline methods. -->
+              <!-- </p> -->
+            <!-- </td> -->
+          <!-- </tr> -->
+        <!-- </tbody></table> -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
 
           
 
-        </tbody></table>
+        <!-- </tbody></table> -->
 		
-<table style="width: 100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 10%;">
-    </colgroup>
-<thead>
- <tr>
- <th></th>
- <th style="text-align:center">Female(target) + Male</th>
- <th style="text-align:center">Male(target) + Male</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td style="text-align:center">Mix</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/Mixed.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+<!-- <table style="width: 100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"> -->
+    <!-- <colgroup> -->
+       <!-- <col span="1" style="width: 10%;"> -->
+       <!-- <col span="1" style="width: 10%;"> -->
+       <!-- <col span="1" style="width: 10%;"> -->
+    <!-- </colgroup> -->
+<!-- <thead> -->
+ <!-- <tr> -->
+ <!-- <th></th> -->
+ <!-- <th style="text-align:center">Female(target) + Male</th> -->
+ <!-- <th style="text-align:center">Male(target) + Male</th> -->
+ <!-- </tr> -->
+ <!-- </thead> -->
+ <!-- <tbody> -->
+ <!-- <tr> -->
+ <!-- <td style="text-align:center">Mix</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/Mixed.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-  <tr>
- <td style="text-align:center">DNN-MSE</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/DNN-MSE.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+  <!-- <tr> -->
+ <!-- <td style="text-align:center">DNN-MSE</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/DNN-MSE.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-  <tr>
- <td style="text-align:center">BLSTM-MSE</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-MSE.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+  <!-- <tr> -->
+ <!-- <td style="text-align:center">BLSTM-MSE</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-MSE.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-  <tr>
- <td style="text-align:center">BLSTM-ML</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-ML.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+  <!-- <tr> -->
+ <!-- <td style="text-align:center">BLSTM-ML</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-ML.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-  <tr>
- <td style="text-align:center">BLSTM-Mel</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-Mel.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+  <!-- <tr> -->
+ <!-- <td style="text-align:center">BLSTM-Mel</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-Mel.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-   <tr>
- <td style="text-align:center">BLSTM-GT</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-GT.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+   <!-- <tr> -->
+ <!-- <td style="text-align:center">BLSTM-GT</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-GT.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
  
-   <tr>
- <td style="text-align:center">BLSTM-P</td>
- <td style="text-align:center">
- <audio controls>
-  <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-P.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio></td>
- <td style="text-align:center"></td>
- </tr>
+   <!-- <tr> -->
+ <!-- <td style="text-align:center">BLSTM-P</td> -->
+ <!-- <td style="text-align:center"> -->
+ <!-- <audio controls> -->
+  <!-- <source src="Audio/female_pwwb8s_with_male_m9SNR/BLSTM-P.wav" type="audio/wav"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio></td> -->
+ <!-- <td style="text-align:center"></td> -->
+ <!-- </tr> -->
 
  
-</table></tbody>
+<!-- </table></tbody> -->
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Also, check out<a href="https://github.com/jonbarron/jonbarron_website"> Jon Barron</a>'s website 
-                <br>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
-</body>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+          <!-- <tr> -->
+            <!-- <td style="padding:0px"> -->
+              <!-- <br> -->
+              <!-- <p style="text-align:right;font-size:small;"> -->
+                <!-- Also, check out<a href="https://github.com/jonbarron/jonbarron_website"> Jon Barron</a>'s website  -->
+                <!-- <br> -->
+              <!-- </p> -->
+            <!-- </td> -->
+          <!-- </tr> -->
+        <!-- </tbody></table> -->
+      <!-- </td> -->
+    <!-- </tr> -->
+  <!-- </table> -->
+<!-- </body> -->
 
-</html>
+<!-- </html> -->
